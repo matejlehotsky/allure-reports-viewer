@@ -20,8 +20,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       $response['error'] = 'Error: Please select a valid file format.';
     }
 
-    // Verify file size - 50MB max
-    $maxsize = 100 * 1024 * 1024;
+    // Verify file size - 200MB max
+    $maxsize = 200 * 1024 * 1024;
 
     if ($file_size > $maxsize) {
       $response['error'] = 'Error: File size is larger than the allowed limit.';

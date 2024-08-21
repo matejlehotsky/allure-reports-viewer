@@ -26,7 +26,7 @@
               return xhr;
             },
             type: 'POST',
-            url: '/allure-report/handlers/upload-process.php',
+            url: 'handlers/upload-process.php',
             data: new FormData(this),
             contentType: false,
             cache: false,
@@ -78,7 +78,7 @@
                 </div>
             </div>
 
-            <a href="/allure-report" class="btn btn-danger">Back to Report</a>
+            <a href="index.php" class="btn btn-danger">Back to Report</a>
             <button type="submit" class="btn btn-primary float-right">Upload</button>
         </form>
  </div>

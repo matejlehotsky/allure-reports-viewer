@@ -13,7 +13,7 @@
 
 <body class="justify-content-center d-flex p-2">
 <div class="border p-5 mt-5">
-    <form action="/allure-report/handlers/delete-process.php" method="POST" enctype="multipart/form-data">
+    <form action="handlers/delete-process.php" method="POST" enctype="multipart/form-data">
         <div class="mb-3">
           <?php if (isset($_GET['report']) && !empty($_GET['report'])): ?>
               <label for="password" class="form-label">Password</label>
@@ -25,7 +25,7 @@
 
               <input type="hidden" name="dirname" value="<?php echo $_GET['report']; ?>">
 
-              <a href="/allure-report" class="btn btn-danger">Back to Report</a>
+              <a href="index.php" class="btn btn-danger">Back to Report</a>
               <button type="submit" class="btn btn-primary float-right">Delete</button>
           <?php else: ?>
               <div class="alert alert-danger mt-2" role="alert">

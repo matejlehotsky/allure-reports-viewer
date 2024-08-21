@@ -121,8 +121,8 @@
 
           foreach (array_reverse($reports) as $dir) {
             print '<li>
-<a href="/allure-report?report=' . $dir . '" class="' . ($current == $dir ? 'active' : '') . '">' . $dir . '</a>
-<a href="/allure-report/delete.php?report=' . $dir . '" class="delete">&#x2715;</a>
+<a href="index.php?report=' . $dir . '" class="' . ($current == $dir ? 'active' : '') . '">' . $dir . '</a>
+<a href="delete.php?report=' . $dir . '" class="delete">&#x2715;</a>
 </li>';
           }
           ?>

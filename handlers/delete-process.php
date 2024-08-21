@@ -61,7 +61,7 @@ function rrmdir($dir) {
       <?php endif; ?>
     </div>
 
-    <a href="/allure-report" class="btn btn-danger">Back to Reports</a>
+    <a href="../index.php" class="btn btn-danger">Back to Reports</a>
 </div>
 </body>
 </html>
